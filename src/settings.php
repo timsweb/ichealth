@@ -5,7 +5,11 @@ return [
 
         // Renderer settings
         'renderer' => [
-            'template_path' => __DIR__ . '/../templates/',
+            'template_path' => __DIR__ . '/../templates_twig/',
+            'twig_envs' => [
+                'cache' => __DIR__ . '/../templates_cache/',
+                'auto_reload' => true,
+            ],
         ],
 
         // Monolog settings

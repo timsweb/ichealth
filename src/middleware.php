@@ -1,3 +1,3 @@
 <?php
 // Application middleware
-$app->add($container['layout']);
+//$app->add($container['layout']);

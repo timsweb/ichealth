@@ -4,9 +4,14 @@
 $container = $app->getContainer();
 
 // view renderer
-$container['renderer'] = function ($c) {
+$container['view'] = function ($c) use($container) {
     $settings = $c->get('settings')['renderer'];
-    return new Slim\Views\PhpRenderer($settings['template_path']);
+    $view = new \Slim\Views\Twig($settings['template_path'], $settings['twig_envs']);
+    $view->addExtension(new \Slim\Views\TwigExtension(
+        $container['router'],
+        $container['request']->getUri()
+    ));
+    return $view;
 };
 
 // monolog
@@ -18,7 +23,7 @@ $container['logger'] = function ($c) {
     return $logger;
 };
 
-$container['layout'] = function($c) {
-    $layout = new \Middleware\Layout($c->get('renderer'), $c->get('settings')['layout']);
-    return $layout;
-};
+// $container['layout'] = function($c) {
+//     $layout = new \Middleware\Layout($c->get('renderer'), $c->get('settings')['layout']);
+//     return $layout;
+// };
