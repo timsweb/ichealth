@@ -177,3 +177,10 @@ p.copyright {
 .hero-feature {
     margin-bottom: 30px;
 }
+
+@media(min-width:767px) {
+    .hero-feature .thumbnail {
+        height: 475px;
+        overflow: visible;
+    }
+}
