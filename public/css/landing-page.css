@@ -25,6 +25,10 @@ h6 {
     font-size: 14px;
 }
 
+.navbar-brand {
+    padding: 0px 15px;
+}
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -184,7 +188,15 @@ p.copyright {
 
 .hero-feature {
     margin-bottom: 30px;
+    /*position: relative;*/
 }
+
+    /*
+    .hero-feature__action {
+        position: absolute;
+        bottom: 30px;
+    }
+    */
 
 @media(min-width:767px) {
     .hero-feature .thumbnail {
