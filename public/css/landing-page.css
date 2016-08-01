@@ -124,6 +124,13 @@ h6 {
     background-size: cover;
 }
 
+.banner1 {
+    padding: 150px 0;
+    color: #f8f8f8;
+    background: url(../img/banners/1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
 .compact-banner {
     padding: 25px 0;
     color: #f8f8f8;
