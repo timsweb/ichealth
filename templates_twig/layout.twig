@@ -14,7 +14,11 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    {% block css %}<link href="/css/landing-page.css" rel="stylesheet">{% endblock %}
+    {% block css %}
+        <link href="/css/landing-page.css" rel="stylesheet">
+        <link href="/css/carousel.css" rel="stylesheet">
+
+    {% endblock %}
 
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -68,13 +72,13 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <a href="/about">iC-The Bosses</a>
                     </li>
                     <li>
-                        <a href="/services">Services</a>
+                        <a href="/services">iC-Services</a>
                     </li>
                     <li>
-                        <a href="/health">Health</a>
+                        <a href="/health">iC-Products</a>
                     </li>
                     <!--<li class="dropdown">
                       <a href="about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
@@ -121,11 +125,15 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="/">About</a>
+                            <a href="/about">iC-The Bosses</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="/services">Services</a>
+                            <a href="/services">iC-Services</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="/health">iC-Products</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
@@ -142,7 +150,8 @@
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/carousel.js"></script>
 </body>
 
 </html>
