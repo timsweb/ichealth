@@ -1,0 +1,38 @@
+{% extends "layout.twig" %}
+{% block title %}Contact Us {% endblock %}
+{% block body %}
+<!-- Header -->
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <!-- Page Content -->
+
+    <div class="content-section-a">
+        <div class="container">
+            <h1>Contact Us</h1>
+            {% if error %}
+                <p>On no! Something went wrong. Please go back and try again (sorry about that).</p>
+            {% else %}
+                <p>
+                  Thanks! We'll be in touch shortly.
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    <!-- /.banner -->
+{% endblock %}
+
+{% block js %}
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+{% endblock %}
