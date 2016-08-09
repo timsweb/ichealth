@@ -24,7 +24,7 @@ $app->post('/contact', function ($request, $response, $args) {
         $resp = $client->post('https://www.google.com/recaptcha/api/siteverify', [
             'form_params' => [
                 'secret' => \Defuse\Crypto\Crypto::decryptWithPassword(
-    'def5020084935a2ec1822406f0b5eec60e46ad053ff3b1442a0deab3163bf5b0750cac2a099e96d676a970352df6daf03a53a899e3f7769bb31e03c1a876c8a911db2f208701fe2df00643bd96adca340fc1b20a65d774914579f0b3782d4c01eb6eaad4c5555aa40ba4d8d944fefb647590158e4efb7fbd8b5af9be', getenv('IC_KEY')),
+    'def50200f314c2c271c68369ac1060b727f243ebc1957f5506d681cdbbf5f0cb59957fb8ce1cda17bf880ca24c4b39d1385e9ff95b68d1b987c5df9e481b821aca1327fc0f12c15c6e4ec1cc72c388af9ed748fc65a4c87006587c46b52673af953da06be3051cd0ee8895364503dccc2412dd5eb84b0a5d311ee549', getenv('IC_KEY')),
                 'response' => $post['g-recaptcha-response'],
             ]
         ]);
