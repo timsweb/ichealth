@@ -39,14 +39,14 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/bloke.jpg) no-repeat center center;
+    background: url(../img/ian-and-chloe.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 35%;
+    padding-bottom: 5%;
 }
 
 .intro-message > h1 {
@@ -120,7 +120,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/weights.jpg) no-repeat center center;
+    background: url(../img/step.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -129,6 +129,46 @@ h6 {
     color: #f8f8f8;
     background: url(../img/banners/1.jpg) no-repeat center center;
     background-size: cover;
+}
+
+.banner2 {
+    padding: 150px 0;
+    color: #f8f8f8;
+    background: url(../img/banners/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner3 {
+    padding: 150px 0;
+    color: #f8f8f8;
+    background: url(../img/banners/3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner4 {
+    padding: 150px 0;
+    color: #f8f8f8;
+    background: url(../img/banners/4.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner5 {
+    padding: 150px 0;
+    color: #f8f8f8;
+    background: url(../img/banners/5.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner6 {
+    padding: 150px 0;
+    color: #f8f8f8;
+    background: url(../img/banners/6.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+img.bnw {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .compact-banner {
