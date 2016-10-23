@@ -19,6 +19,7 @@ $app->post('/contact', function ($request, $response, $args) {
     $mail->Subject = $post['subject'];
     $mail->Body = $post['message'];
     $mail->addAddress('chloe@ic-health.co.uk');
+    $mail->addAddress('ian@ic-health.co.uk');
     $client = new \GuzzleHttp\Client();
     try {
         $resp = $client->post('https://www.google.com/recaptcha/api/siteverify', [
